@@ -120,3 +120,21 @@ python -m lerobot.scripts.lerobot_rollout \
 - Robot successfully learns pick and place task
 - Tested with variable object and tray positions (9x9 zone grid)
 - Workspace: 50cm wide x 21cm deep
+
+## Dataset Download
+
+### 1-Camera Dataset (32 episodes, 14K frames, 96MB)
+- Camera: Arducam IMX477 (workspace/top view only)
+- FPS: 15
+- Resolution: 640x480
+- Task: Pick and place object
+
+**Download:** https://drive.google.com/file/d/1Fcs4L1rHC1loITgYCjOsfwKJwtMAe-ad/view?usp=sharing
+
+### How to use:
+```bash
+# Download and extract
+gdown "https://drive.google.com/uc?id=1Fcs4L1rHC1loITgYCjOsfwKJwtMAe-ad"
+mkdir -p ~/.cache/huggingface/lerobot/
+tar -xzf so100_pick_place_1cam.tar.gz -C ~/.cache/huggingface/lerobot/
+```
